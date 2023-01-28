@@ -226,7 +226,7 @@ const styles = StyleSheet.create({
         margin: 10,
         height: 60,
         width: 60,
-        borderRadius: "20%",
+        borderRadius: 20,
     },
     stackIcon: {
         marginLeft: 10,

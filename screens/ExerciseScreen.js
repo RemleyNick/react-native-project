@@ -1,9 +1,20 @@
-import { Text, View } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
+import { Counter } from "../features/counter/Counter";
 
-const ExerciseScreen = () => {
+const ExerciseScreen = ({ navigation }) => {
     return (
         <View>
-            <Text>Exercise Screen</Text>
+            <Text>Rate Your Pain Level Today</Text>
+            <Counter />
+            <Text>
+                Exercise challenge will be based on your pain rating. The higher
+                your pain today, the easier the exercise.
+            </Text>
+            <TouchableOpacity
+                onPress={() => navigation.navigate("ExerciseModal")}
+            >
+                <Text>Submit</Text>
+            </TouchableOpacity>
         </View>
     );
 };
