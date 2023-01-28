@@ -8,17 +8,34 @@ const ExerciseModalScreen = () => {
     const exercise = EXERCISES.find((e) => e.rating === count);
 
     return (
-        <View style={styles.view}>
-            <Text>{exercise.name}</Text>
-            <Image source={exercise.image} />
-            <Text>{exercise.description}</Text>
+        <View>
+            <Text style={styles.title}>{exercise.name}</Text>
+            <Image source={exercise.image} style={styles.image} />
+            <Text style={styles.subtitle}>{exercise.description}</Text>
         </View>
     );
 };
 
 const styles = StyleSheet.create({
-    view: {
-        marginTop: 10,
+    title: {
+        margin: 10,
+        fontSize: 40,
+        textAlign: "center",
+        fontWeight: "bold",
+        textTransform: "uppercase",
+        letterSpacing: 3,
+    },
+    image: {
+        width: 300,
+        height: 300,
+        justifyContent: "center",
+        alignSelf: "center",
+        margin: 10,
+    },
+    subtitle: {
+        fontSize: 20,
+        textAlign: "center",
+        margin: 10,
     },
 });
 

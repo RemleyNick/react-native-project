@@ -51,14 +51,14 @@ export const EXERCISES = [
     {
         rating: 3,
         name: "Single Leg Bridge",
-        image: require("./image-video/singleLegBridges.jpg"),
+        image: require("./image-video/singleLegBridge.png"),
         description:
             "Lie on your back with your hands by your sides, knees bent, and feet flat on the floor. Lift one foot, extending the leg fully so it is roughly 45 degrees to the floor. This is the starting position. Raise your hips, tightening your abdominals and buttock muscles to support the lift, until your shoulders and knees are in a straight line. Hold this position for a count of one or two. Return to starting position.",
     },
     {
         rating: 2,
         name: "Single Leg Bridge",
-        image: require("./image-video/singleLegBridges.jpg"),
+        image: require("./image-video/singleLegBridge.png"),
         description:
             "Lie on your back with your hands by your sides, knees bent, and feet flat on the floor. Lift one foot, extending the leg fully so it is roughly 45 degrees to the floor. This is the starting position. Raise your hips, tightening your abdominals and buttock muscles to support the lift, until your shoulders and knees are in a straight line. Hold this position for a count of one or two. Return to starting position.",
     },
