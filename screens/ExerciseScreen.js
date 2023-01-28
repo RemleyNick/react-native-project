@@ -1,22 +1,58 @@
-import { Text, View, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity, StyleSheet } from "react-native";
 import { Counter } from "../features/counter/Counter";
 
 const ExerciseScreen = ({ navigation }) => {
     return (
         <View>
-            <Text>Rate Your Pain Level Today</Text>
+            <Text style={styles.title}>Rate Your Pain Level Today</Text>
             <Counter />
-            <Text>
+            <Text style={styles.subtitle}>0 = No Pain, 10 = Extreme Pain.</Text>
+            <Text style={styles.subtitle}>
                 Exercise challenge will be based on your pain rating. The higher
                 your pain today, the easier the exercise.
             </Text>
             <TouchableOpacity
+                style={styles.button}
                 onPress={() => navigation.navigate("ExerciseModal")}
             >
-                <Text>Submit</Text>
+                <Text style={styles.buttonText}>Submit</Text>
             </TouchableOpacity>
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+    title: {
+        margin: 10,
+        marginBottom: 25,
+        fontSize: 40,
+        textAlign: "center",
+        fontWeight: "bold",
+        textTransform: "uppercase",
+        letterSpacing: 3,
+    },
+    subtitle: {
+        fontSize: 20,
+        textAlign: "center",
+        margin: 10,
+    },
+    button: {
+        width: 200,
+        backgroundColor: "blue",
+        padding: 15,
+        marginTop: 5,
+        justifyContent: "center",
+        alignSelf: "center",
+        borderRadius: 20,
+        marginBottom: 8,
+    },
+    buttonText: {
+        fontSize: 20,
+        fontWeight: "bold",
+        color: "#f4f4f4",
+        justifyContent: "center",
+        alignSelf: "center",
+    },
+});
 
 export default ExerciseScreen;

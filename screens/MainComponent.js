@@ -10,6 +10,7 @@ import HomeScreen from "./HomeScreen";
 import ExerciseScreen from "./ExerciseScreen";
 import ContactScreen from "./ContactScreen";
 import AboutScreen from "./AboutScreen";
+import ExerciseModalScreen from "./ExerciseModalScreen";
 import { Icon } from "react-native-elements";
 import logo from "../assets/image-video/bbhLogo2.png";
 
@@ -106,6 +107,11 @@ const ExerciseNavigator = () => {
                         />
                     ),
                 })}
+            />
+            <Stack.Screen
+                name="ExerciseModal"
+                component={ExerciseModalScreen}
+                options={{ title: "ExerciseModal" }}
             />
         </Stack.Navigator>
     );
