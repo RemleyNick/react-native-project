@@ -111,7 +111,7 @@ const ExerciseNavigator = () => {
             <Stack.Screen
                 name="ExerciseModal"
                 component={ExerciseModalScreen}
-                options={{ title: "ExerciseModal" }}
+                options={{ title: "Exercises" }}
             />
         </Stack.Navigator>
     );

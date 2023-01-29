@@ -6,7 +6,7 @@ const ExerciseScreen = ({ navigation }) => {
         <View>
             <Text style={styles.title}>Rate Your Pain Level Today</Text>
             <Counter />
-            <Text style={styles.subtitle}>0 = No Pain, 10 = Extreme Pain.</Text>
+            <Text style={styles.italic}>0 = No Pain, 10 = Extreme Pain.</Text>
             <Text style={styles.subtitle}>
                 Exercise challenge will be based on your pain rating. The higher
                 your pain today, the easier the exercise.
@@ -36,15 +36,21 @@ const styles = StyleSheet.create({
         textAlign: "center",
         margin: 10,
     },
+    italic: {
+        fontStyle: "italic",
+        fontSize: 20,
+        textAlign: "center",
+        margin: 10,
+    },
     button: {
         width: 200,
         backgroundColor: "blue",
         padding: 15,
-        marginTop: 5,
+        marginTop: 10,
         justifyContent: "center",
         alignSelf: "center",
-        borderRadius: 20,
-        marginBottom: 8,
+        borderRadius: 40,
+        marginBottom: 3,
     },
     buttonText: {
         fontSize: 20,
