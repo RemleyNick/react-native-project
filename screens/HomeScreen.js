@@ -17,14 +17,12 @@ const HomeScreen = ({ navigation }) => {
             <Text style={styles.subtitle}>What are you waiting for?</Text>
             <TouchableOpacity
                 onPress={() => navigation.navigate("Exercise")}
-                // title="Get Started"
                 style={styles.startButton}
             >
                 <Text style={styles.btnStartText}>Get Started!</Text>
             </TouchableOpacity>
             <TouchableOpacity
                 onPress={() => navigation.navigate("About")}
-                // title="Learn More"
                 style={styles.aboutButton}
             >
                 <Text style={styles.btnAboutText}>Learn More</Text>

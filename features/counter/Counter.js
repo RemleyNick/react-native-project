@@ -10,7 +10,6 @@ export function Counter() {
         <View>
             <TouchableOpacity
                 style={styles.button}
-                aria-label="Increment value"
                 onPress={() => dispatch(increment())}
             >
                 <Text style={styles.subtitle}> + </Text>
@@ -18,7 +17,6 @@ export function Counter() {
             <Text style={styles.value}>{count}</Text>
             <TouchableOpacity
                 style={styles.button}
-                aria-label="Decrement value"
                 onPress={() => dispatch(decrement())}
             >
                 <Text style={styles.subtitle}> - </Text>
